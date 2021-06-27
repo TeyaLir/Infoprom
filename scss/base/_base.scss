@@ -1,13 +1,19 @@
-// body {
-//   color: ;
-//   font-family: ;
-//   font-weight: ;
-//   font-size: ;
-//   line-height: ;
-// }
+// Thin 100
+// Light 300
+// Regular 400
+// Medium 500
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  //   color: ;
+  //   font-size: ;
+  //   line-height: ;
+}
 
 .container {
-  max-width: 1220px; // width + padding
-  padding: 0 10px;
+  max-width: 1560px;
+  padding: 0 15px;
   margin: 0 auto;
 }

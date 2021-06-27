@@ -4,25 +4,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- Отключает принудительную ссылку у номера телефона на iOS -->
   <meta name="format-detection" content="telephone=no">
   <!-- Краткое описание страницы. Пишем не более 140 символов. -->
   <meta name="description" content=" ">
   <!-- Ключевые слова страницы. Пишем не более 20ти слов. Ключевые фразы разделяем запятой.  -->
   <meta name="keywords" content=" ">
-  <!-- Автор страницы -->
-  <meta name="Author" content="Pavlikhina Irina"> 
-  <!-- Авторские права -->
-  <meta name="Copyright" content="Pavlikhina Irina"> 
+  <meta name="Author" content="Pavlikhina Irina">
+  <meta name="Copyright" content="Pavlikhina Irina">
 
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="logo">
+          <a href="#!">
+            <img src="./img/logo.png" alt="logo">
+          </a>
+        </div>
+        <button class="menu__btn">
+          <span></span>
+        </button>
+        <nav class="menu" aria-expanded="false" aria-controls="">
+          <ul class="menu__list">
+            <li><a href="#!">Что мы проектируем</a></li>
+            <li><a href="#!">Состав проекта</a></li>
+            <li><a href="#!">Виды работ</a></li>
+            <li><a href="#!">Наши гарантии и обязательства</a></li>
+            <li><a href="#!">Выполненные проекты</a></li>
+            <li><a href="#!">Отзывы и благодарности</a></li>
+            <li><a href="#!">Клиенты</a></li>
+            <li><a href="#!">Лицензии</a></li>
+            <li><a href="#!">Контакты</a></li>
+            <li><a href="#!">Оставить заявку</a></li>
+          </ul>
+        </nav>
+        <div class="contacts">
+          <a href="tel:74956645308" class="phone">+7 (495) 664 53 08</a>
+          <a href="mailto:info@info-prom.ru" class="email">info@info-prom.ru</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>

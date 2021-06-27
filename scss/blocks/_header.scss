@@ -1,0 +1,161 @@
+.header {
+  height: 115px;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  padding-top: 30px;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:$colorMain;
+  z-index: 2;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  z-index: 5;
+}
+
+.menu__btn {
+  display: block;
+  position: relative;
+  width: 26px;
+  height: 20px;
+  background-color: transparent;
+  z-index: 5;
+
+  &:hover {
+    transition: all .3s ease 0s;
+    opacity: 0.5;
+  }
+
+  & span {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    transition: all .3s ease 0s;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    transition: all .3s ease 0s;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  &.active span {
+    transform: scale(0);
+  }
+
+  &.active::before {
+    transform: rotate(45deg);
+    top: 8px;
+  }
+
+  &.active::after {
+    transform: rotate(-45deg);
+    bottom: 8px;
+  }
+}
+
+.menu {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  transition: all .5s ease 0s;
+
+  &__list {
+    display: block;
+    width: 100%;
+    background-color: $colorMain;
+    text-align: center;
+    padding: 30px;
+
+    & li {
+      padding: 10px;
+    }
+
+    & a {
+      display: block;
+      font-size: 14px;
+      color: #fff;
+      text-transform: uppercase;
+      transition: all .3s ease 0s;
+    }
+
+    & a:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &.active {
+    display: block;
+    top: 90px;
+  }
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+.contacts {
+  z-index: 5;
+
+  & a {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.phone {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 15px;
+
+  &:hover {
+    transition: all .3s ease 0s;
+    opacity: 0.5;
+  }
+}
+
+.email {
+  font-size: 14px;
+
+  &:hover {
+    transition: all .3s ease 0s;
+    opacity: 0.5;
+  }
+}
