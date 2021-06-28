@@ -81,18 +81,23 @@ body {
   margin: 0 auto;
 }
 
-.header {
-  height: 115px;
   color: #fff;
+.header {
+  height: 100vh;
+}
+
+.header__wrap {
+  height: 100px;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
+  right: 0;
   z-index: 50;
   padding-top: 30px;
 }
 
-.header::before {
+.header__wrap::before {
   content: '';
   position: absolute;
   top: 0;
@@ -112,6 +117,7 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  color: #fff;
 }
 
 .logo {
@@ -276,5 +282,101 @@ body.lock {
   -o-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
   opacity: 0.5;
+}
+
+.top {
+  position: relative;
+  background-color: #2f4583;
+  height: 100%;
+}
+
+.top__img {
+  position: absolute;
+  bottom: 0;
+}
+
+.top__img img {
+  width: 100%;
+}
+
+.top__inner {
+  padding-top: 229px;
+  color: #fff;
+  text-align: left;
+  z-index: 10;
+}
+
+.top__title {
+  font-weight: 100;
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 45px;
+}
+
+.top__items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 190px;
+}
+
+.top__item1, .top__item2 {
+  position: relative;
+  width: 242px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  padding-left: 50px;
+}
+
+.top__item1::before, .top__item2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.top__item1::before {
+  background-image: url("./../img/icons/zoom.png");
+}
+
+.top__item2::before {
+  background-image: url("./../img/icons/check.png");
+}
+
+.top__menu ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top__menu li {
+  z-index: 10;
+}
+
+.top__menu li + li {
+  margin-left: 125px;
+}
+
+.top__menu a {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.846;
+  letter-spacing: 0.325px;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #fff;
+}
+
+.top__menu a:hover {
+  opacity: 0.5;
+  -webkit-transition: all .3s ease 0s;
+  -o-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
 }
 /*# sourceMappingURL=style.css.map */
