@@ -6,14 +6,17 @@
 
 .top__img {
   position: absolute;
-  bottom: 0;
+  top: 50%;
+  transform: translateY(-50%);
   & img {
     width: 100%;
   }
 }
 
 .top__inner {
-  padding-top: 229px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   color: #fff;
   text-align: left;
   z-index: 10;

@@ -5,10 +5,8 @@
 .projects {
   &__items {
     display: flex;
-    // justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 158px;
-    padding: 0 100px;
+    margin-top: 159px;
   }
 
   &__item {
@@ -16,7 +14,7 @@
     flex-direction: column;
     align-items: center;
     width: 20%;
-    margin-bottom: 80px;
+    margin-bottom: 77px;
 
     & img {
       display: block;
@@ -33,9 +31,10 @@
 }
 
 .projects__link {
+  margin-top: 15px;
   text-align: center;
 
   &-btn {
-    padding: 0 55px;
+    padding: 0 46px;
   }
 }

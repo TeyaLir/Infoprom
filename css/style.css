@@ -90,7 +90,7 @@ body {
   width: 490px;
   border-top: 2px solid #2f4583;
   border-bottom: 2px solid #2f4583;
-  padding: 30px 0;
+  padding: 26px 0;
   margin: 0 auto;
 }
 
@@ -101,7 +101,7 @@ body {
           border-radius: 30px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 65px;
+  line-height: 60px;
   color: #fff;
   -webkit-transition: all .3s ease 0s;
   -o-transition: all .3s ease 0s;
@@ -118,14 +118,14 @@ body {
 }
 
 .header__wrap {
-  height: 100px;
+  height: 90px;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   right: 0;
   z-index: 50;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .header__wrap::before {
@@ -323,7 +323,10 @@ body.lock {
 
 .top__img {
   position: absolute;
-  bottom: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .top__img img {
@@ -331,7 +334,11 @@ body.lock {
 }
 
 .top__inner {
-  padding-top: 229px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   color: #fff;
   text-align: left;
   z-index: 10;
@@ -423,8 +430,7 @@ body.lock {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  margin-top: 158px;
-  padding: 0 100px;
+  margin-top: 159px;
 }
 
 .projects__item {
@@ -442,7 +448,7 @@ body.lock {
       -ms-flex-align: center;
           align-items: center;
   width: 20%;
-  margin-bottom: 80px;
+  margin-bottom: 77px;
 }
 
 .projects__item img {
@@ -458,11 +464,12 @@ body.lock {
 }
 
 .projects__link {
+  margin-top: 15px;
   text-align: center;
 }
 
 .projects__link-btn {
-  padding: 0 55px;
+  padding: 0 46px;
 }
 
 .description {
@@ -480,7 +487,7 @@ body.lock {
           justify-content: space-between;
   height: 763px;
   width: 100%;
-  margin-bottom: 45px;
+  margin-bottom: 44px;
 }
 
 .description__left {
@@ -529,13 +536,13 @@ body.lock {
   bottom: 0;
   left: 0;
   right: 0;
-  margin-bottom: -18px;
+  margin-bottom: -15px;
 }
 
 .description__block1 p,
 .description__block2 p,
 .description__block3 p {
-  margin-top: 5px;
+  margin-top: 1px;
   font-weight: 300;
   font-size: 11px;
   color: #7e7e7e;
@@ -588,19 +595,19 @@ body.lock {
 
 .description__right-text {
   position: absolute;
-  top: 35px;
-  left: 65px;
+  top: 32px;
+  left: 67px;
 }
 
 .description__right-title {
   font-weight: 300;
   font-size: 28px;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
 }
 
 .description__right-list li {
   font-size: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .description__right-list li span {
