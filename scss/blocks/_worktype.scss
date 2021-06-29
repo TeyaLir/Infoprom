@@ -1,0 +1,42 @@
+.worktype {
+  padding: 173px 0 158px;
+}
+
+.worktype__title {
+  text-align: center;
+  margin-bottom: 78px;
+}
+
+.worktype {
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    width: 815px;
+    margin: 0 auto 103px;
+  }
+
+  &__item {
+    width: 140px;
+    height: 140px;
+    text-align: center;
+    border: 2px solid $colorMain;
+    padding: 20px 10px 10px;
+
+    & img {
+      height: 36px;
+      margin-bottom: 25px;
+    }
+
+    & p {
+      font-size: 16px;
+      line-height: 1.1;
+      color: $colorMain;
+    }
+  }
+}
+
+.worktype .slogan {
+  width: 560px;
+  font-size: 18px;
+  padding: 29px 0 30px;
+}
