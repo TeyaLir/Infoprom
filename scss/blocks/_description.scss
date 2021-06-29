@@ -1,0 +1,133 @@
+.description {
+  padding-bottom: 125px;
+}
+
+.description__inner {
+  display: flex;
+  justify-content: space-between;
+  height: 763px;
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.description__left {
+  // max-width: 750px;
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 30px;
+
+  &-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    & .description__block1 {
+      width: 48%;
+    }
+
+    & .description__block2 {
+      width: 48%;
+    }
+  }
+
+  &-bottom {
+    width: 100%;
+  }
+}
+
+.description__block3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: -18px;
+}
+
+.description__block1,
+.description__block2,
+.description__block3 {
+  & p {
+    margin-top: 5px;
+    font-weight: 300;
+    font-size: 11px;
+    color: #7e7e7e;
+  }
+}
+
+.description__block1-img,
+.description__block2-img,
+.description__block3-img,
+.description__block4-img {
+  display: inline-block;
+  background-color: $colorMain;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.description__block1-img {
+  height: 350px;
+  max-width: 358px;
+  background-image: url('./../img/description/desc1.jpg');
+}
+
+.description__block2-img {
+  height: 350px;
+  max-width: 358px;
+  background-image: url('./../img/description/desc2.jpg');
+}
+
+.description__block3-img {
+  height: 369px;
+  max-width: 748px;
+  background-image: url('./../img/description/desc3.jpg');
+}
+
+.description__block4-img {
+  height: 763px;
+  max-width: 749px;
+  background-image: url('./../img/description/desc4.jpg');
+}
+
+.description__right {
+  position: relative;
+  width: 50%;
+  max-width: 749px;
+  max-height: 763px;
+  color: #fff;
+
+  &-text {
+    position: absolute;
+    top: 35px;
+    left: 65px;
+  }
+
+  &-title {
+    font-weight: 300;
+    font-size: 28px;
+    margin-bottom: 35px;
+  }
+
+  &-list li {
+    font-size: 16px;
+    margin-bottom: 30px;
+
+    & span {
+      font-size: 20px;
+      margin-right: 15px;
+    }
+  }
+}
+
+.description__link {
+  text-align: center;
+
+  &-btn {
+    padding: 0 57px;
+  }
+}
