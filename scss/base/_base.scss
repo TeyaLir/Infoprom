@@ -18,6 +18,12 @@ body {
   margin: 0 auto;
 }
 
+.container-fluid {
+  max-width: 1360px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .slogan {
   font-weight: 300;
   font-size: 20px;
@@ -50,4 +56,5 @@ body {
   font-weight: 300;
   font-size: 28px;
   color: $colorMain;
+  text-align: center;
 }
