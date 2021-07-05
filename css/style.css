@@ -114,7 +114,7 @@ body {
   transition: all .3s ease 0s;
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
   background-color: #3963da;
   border-color: #3963da;
 }
@@ -175,12 +175,12 @@ body {
   height: 20px;
   background-color: transparent;
   z-index: 5;
-}
-
-.menu__btn:hover {
   -webkit-transition: all .3s ease 0s;
   -o-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
+}
+
+.menu__btn:hover, .menu__btn:focus {
   opacity: 0.5;
 }
 
@@ -270,7 +270,8 @@ body {
   transition: all .3s ease 0s;
 }
 
-.menu__list a:hover {
+.menu__list a:hover,
+.menu__list a:focus {
   opacity: 0.5;
 }
 
@@ -308,23 +309,23 @@ body.lock {
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 15px;
-}
-
-.phone:hover {
   -webkit-transition: all .3s ease 0s;
   -o-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
+}
+
+.phone:hover, .phone:focus {
   opacity: 0.5;
 }
 
 .email {
   font-size: 14px;
-}
-
-.email:hover {
   -webkit-transition: all .3s ease 0s;
   -o-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
+}
+
+.email:hover, .email:focus {
   opacity: 0.5;
 }
 
@@ -422,13 +423,13 @@ body.lock {
   text-transform: uppercase;
   padding-bottom: 8px;
   border-bottom: 2px solid #fff;
-}
-
-.top__menu a:hover {
-  opacity: 0.5;
   -webkit-transition: all .3s ease 0s;
   -o-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
+}
+
+.top__menu a:hover, .top__menu a:focus {
+  opacity: 0.5;
 }
 
 .projects {
@@ -775,5 +776,230 @@ body.lock {
 .guarantee__item li {
   margin-left: 16px;
   line-height: 1.7;
+}
+
+.feadback {
+  background-color: #2f4583;
+  background-image: url("./../img/feadback-bg.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding: 147px 0 180px;
+}
+
+.feadback__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feadback__text {
+  max-width: 640px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.feadback__text-title {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 52px;
+}
+
+.feadback__text-contacts {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.feadback__text-contacts a {
+  display: block;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #fff;
+}
+
+.feadback__phone, .feadback__email {
+  padding-left: 27px;
+  position: relative;
+  -webkit-transition: all .3s ease 0s;
+  -o-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+}
+
+.feadback__phone:hover, .feadback__phone:focus, .feadback__email:hover, .feadback__email:focus {
+  opacity: 0.5;
+}
+
+.feadback__phone::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("./../img/icons/phone.png");
+  background-repeat: no-repeat;
+}
+
+.feadback__email::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 19px;
+  height: 16px;
+  background-image: url("./../img/icons/email.png");
+  background-repeat: no-repeat;
+}
+
+.feadback__form {
+  width: 437px;
+  background-color: #fff;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  padding: 42px 38px 35px;
+  margin-top: 9px;
+}
+
+.feadback__form label {
+  display: block;
+  font-weight: 300;
+  font-size: 14px;
+  color: #525252;
+  margin-bottom: 10px;
+}
+
+.feadback__form input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #959595;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  padding: 0 15px;
+  margin-bottom: 35px;
+  -webkit-transition: all .3s ease 0s;
+  -o-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+}
+
+.feadback__form input:hover, .feadback__form input:focus {
+  border: 2px solid #2f4583;
+}
+
+.feadback__form input[type="email"] {
+  margin-bottom: 27px;
+}
+
+.feadback__form input[type="file"] {
+  width: auto;
+  height: auto;
+  border: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.feadback__form .inputfile {
+  position: absolute;
+  overflow: hidden;
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  z-index: -1;
+}
+
+.feadback__form .inputfile:focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+  background-color: #2f4583;
+  color: #fff;
+}
+
+.feadback__form .inputfile + label {
+  display: inline-block;
+  width: 128px;
+  background-color: #e5e5e5;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #525252;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all .3s ease 0s;
+  -o-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+  padding: 12px 5px;
+  margin: 0 9px 23px 0;
+}
+
+.feadback__form .inputfile + label:hover {
+  background-color: #2f4583;
+  color: #fff;
+}
+
+.feadback__form .spanfile {
+  font-size: 11px;
+  font-weight: 300;
+  color: #525252;
+}
+
+.feadback__form .check-box {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 35px;
+}
+
+.feadback__form input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  padding-left: 20px;
+}
+
+.feadback__form input[type="checkbox"]:checked + .check-style::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-color: #2f4583;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.feadback__form input[type="checkbox"]:disabled + .check-style {
+  border-color: #ccc;
+}
+
+.feadback__form input[type="checkbox"]:focus + .check-style {
+  -webkit-box-shadow: 0 0 0 2px #000;
+          box-shadow: 0 0 0 2px #000;
+}
+
+.feadback__form .check-style {
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #959595;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  margin-top: -5px;
+  margin-left: -35px;
+}
+
+.feadback__form-btn {
+  display: block;
+  padding: 0 79px;
+  margin: 20px auto 0;
 }
 /*# sourceMappingURL=style.css.map */

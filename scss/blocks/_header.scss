@@ -3,7 +3,7 @@
 }
 
 .header__wrap {
-  height: 90px;  
+  height: 90px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -41,9 +41,10 @@
   height: 20px;
   background-color: transparent;
   z-index: 5;
+  transition: all .3s ease 0s;
 
-  &:hover {
-    transition: all .3s ease 0s;
+  &:hover,
+  &:focus {
     opacity: 0.5;
   }
 
@@ -119,7 +120,8 @@
       transition: all .3s ease 0s;
     }
 
-    & a:hover {
+    & a:hover,
+    & a:focus {
       opacity: 0.5;
     }
   }
@@ -149,18 +151,20 @@ body.lock {
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 15px;
+  transition: all .3s ease 0s;
 
-  &:hover {
-    transition: all .3s ease 0s;
+  &:hover,
+  &:focus {
     opacity: 0.5;
   }
 }
 
 .email {
   font-size: 14px;
+  transition: all .3s ease 0s;
 
-  &:hover {
-    transition: all .3s ease 0s;
+  &:hover,
+  &:focus {
     opacity: 0.5;
   }
 }

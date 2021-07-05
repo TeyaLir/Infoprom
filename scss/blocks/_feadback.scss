@@ -1,0 +1,209 @@
+.feadback {
+  background-color: $colorMain;
+  background-image: url('./../img/feadback-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 147px 0 180px;
+}
+
+.feadback__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feadback {
+  &__text {
+    max-width: 640px;
+    color: #fff;
+    font-weight: 300;
+
+    &-title {
+      font-size: 36px;
+      line-height: 1.2;
+      margin-bottom: 52px;
+    }
+
+    &-contacts {
+      font-size: 20px;
+      line-height: 1.8;
+
+      & a {
+        display: block;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 1.8;
+        color: #fff;
+      }
+    }
+  }
+
+  &__phone,
+  &__email {
+    padding-left: 27px;
+    position: relative;
+    transition: all .3s ease 0s;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+  }
+
+  &__phone::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-image: url('./../img/icons/phone.png');
+    background-repeat: no-repeat;
+  }
+
+  &__email::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 19px;
+    height: 16px;
+    background-image: url('./../img/icons/email.png');
+    background-repeat: no-repeat;
+  }
+}
+
+.feadback__form {
+  width: 437px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 42px 38px 35px;
+  margin-top: 9px;
+
+  & label {
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+    color: #525252;
+    margin-bottom: 10px;
+  }
+
+  & input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #959595;
+    border-radius: 4px;
+    padding: 0 15px;
+    margin-bottom: 35px;
+    transition: all .3s ease 0s;
+
+    &:hover,
+    &:focus {
+      border: 2px solid $colorMain;
+    }
+  }
+
+  & input[type="email"] {
+    margin-bottom: 27px;
+  }
+
+  & input[type="file"] {
+    width: auto;
+    height: auto;
+    border: none;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .inputfile {
+    position: absolute;
+    overflow: hidden;
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    z-index: -1;
+
+    &:focus+label {
+      outline: 1px dotted #000;
+      outline: -webkit-focus-ring-color auto 5px;
+      background-color: $colorMain;
+      color: #fff;
+    }
+  }
+
+  .inputfile+label {
+    display: inline-block;
+    width: 128px;
+    background-color: #e5e5e5;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #525252;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s ease 0s;
+    padding: 12px 5px;
+    margin: 0 9px 23px 0;
+
+    &:hover {
+      background-color: $colorMain;
+      color: #fff;
+    }
+  }
+
+  .spanfile {
+    font-size: 11px;
+    font-weight: 300;
+    color: #525252;
+  }
+
+  & .check-box {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 35px;
+  }
+
+  & input[type="checkbox"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    padding-left: 20px;
+
+    &:checked+.check-style::before {
+      content: "";
+      width: 24px;
+      height: 24px;
+      background-color: $colorMain;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:disabled+.check-style {
+      border-color: #ccc;
+    }
+
+    &:focus+.check-style {
+      box-shadow: 0 0 0 2px #000;
+    }
+  }
+
+  & .check-style {
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #959595;
+    border-radius: 2px;
+    margin-top: -5px;
+    margin-left: -35px;
+  }
+
+  &-btn {
+    display: block;
+    padding: 0 79px;
+    margin: 20px auto 0;
+  }
+}
