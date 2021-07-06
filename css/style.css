@@ -1002,4 +1002,31 @@ body.lock {
   padding: 0 79px;
   margin: 20px auto 0;
 }
+
+.footer {
+  background-color: #2f4583;
+  padding: 37px 0 40px;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+}
+
+.footer__info {
+  text-transform: uppercase;
+}
+
+.footer__info span + span {
+  margin-left: 15px;
+}
 /*# sourceMappingURL=style.css.map */

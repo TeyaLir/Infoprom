@@ -1,0 +1,20 @@
+.footer {
+  background-color: $colorMain;
+  padding: 37px 0 40px;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+}
+
+.footer__info {
+  text-transform: uppercase;
+
+  & span+span {
+    margin-left: 15px;
+  }
+}
