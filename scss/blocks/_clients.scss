@@ -1,0 +1,77 @@
+.clients {
+  padding: 116px 0 150px;
+}
+
+.clients-title {
+  margin-bottom: 83px;
+}
+
+.clients__item {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  width: 10%;
+
+  &-img {
+    position: relative;
+    height: 90px;
+    margin-bottom: 15px;
+
+    & img {
+      height: 100%;
+    }
+  }
+
+  &-text {
+    font-size: 11px;
+    color: #7a7a7a;
+    text-align: center;
+  }
+}
+
+.clients__slider {
+  position: relative;
+  padding: 0px 60px;
+
+  & .slick-slider {
+    min-width: 0;
+  }
+
+  & .slick-track {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  & .slick-list {
+    overflow: hidden;
+  }
+
+  & .slider__item {
+    padding: 0px 15px;
+
+    & img {
+      max-width: 100%;
+    }
+  }
+
+  & .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: -15px 0 0 0;
+    z-index: 2;
+    font-size: 0;
+    width: 12px;
+    height: 40px;
+  }
+
+  & .slick-arrow.slick-prev {
+    left: 0;
+    background: url('./../img/icons/arrow-left.png') 0 0 / 100% no-repeat;
+  }
+
+  & .slick-arrow.slick-next {
+    right: 0;
+    background: url('./../img/icons/arrow-right.png') 0 0 / 100% no-repeat;
+  }
+
+}

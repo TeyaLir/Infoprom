@@ -40,4 +40,13 @@ $(function () {
     });
   });
 
+  // Слайдер в разделе "Наши клиенты"
+  $('.clients__slider').slick({
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    dots: false,
+    autoplay: true,
+  });
+
 });
