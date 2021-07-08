@@ -40,6 +40,16 @@ $(function () {
     });
   });
 
+  // Слайдер в разделе "Отзывы и благодарности"
+  $('.reviews__slider').slick({
+    focusOnSelect: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    autoplay: true,
+    infinite: true
+  });
+
   // Слайдер в разделе "Наши клиенты"
   $('.clients__slider').slick({
     infinite: true,
@@ -50,3 +60,9 @@ $(function () {
   });
 
 });
+
+// Fancybox для раздела "Отзывы и благодарности"
+$('[data-fancybox]').fancybox({
+  loop: true,
+});
+
