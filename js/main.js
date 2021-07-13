@@ -40,6 +40,40 @@ $(function () {
     });
   });
 
+  // Слайдер в разделе "Выполненные проекты"
+  $('.completed__slider').slick({
+    focusOnSelect: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    infinite: false,
+    customPaging: function (slider, i) {
+      var thumb = $(slider.$slides[i]).data();
+      return '<span>' + (i + 1) + '</span>';
+    },
+  });
+  $('.item__single').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.item__nav',
+    arrows: false,
+    fade: true,
+    cssEase: 'linear',
+    speed: 1000,
+  });
+  $('.item__nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.item__single',
+    dots: false,
+    arrows: true,
+    variableWidth: true,
+    adaptiveHeight: true,
+    focusOnSelect: true,
+    autoplay: true,
+    speed: 1000,
+  });
+
   // Слайдер в разделе "Отзывы и благодарности"
   $('.reviews__slider').slick({
     focusOnSelect: true,
@@ -47,7 +81,7 @@ $(function () {
     slidesToScroll: 1,
     dots: false,
     autoplay: true,
-    infinite: true
+    infinite: true,
   });
 
   // Слайдер в разделе "Наши клиенты"
