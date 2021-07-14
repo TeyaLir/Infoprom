@@ -15,6 +15,17 @@ $(function () {
     });
   });
 
+  // Выезд и заезд блока form при клике на вид работ в секции worktype
+  $(".worktype__item").click(function () {
+    if ($(".worktype__form").hasClass("active")) {
+      $(".worktype__form").toggleClass("active");
+      $(".worktype__form").slideUp(350);
+    } else {
+      $(".worktype__form").toggleClass("active");
+      $(".worktype__form").slideDown(350);
+    }
+  });
+
   // Маска для телефона
   $(".phone__mask").mask("+7 (999) 999-99-99");
 

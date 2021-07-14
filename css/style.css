@@ -700,6 +700,16 @@ body.lock {
   text-align: center;
   border: 2px solid #2f4583;
   padding: 20px 10px 10px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.worktype__item:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .worktype__item img {
@@ -711,6 +721,21 @@ body.lock {
   font-size: 16px;
   line-height: 1.1;
   color: #2f4583;
+}
+
+.worktype__form {
+  display: none;
+  -webkit-box-shadow: 34px 34px 50px rgba(0, 0, 0, 0.25);
+          box-shadow: 34px 34px 50px rgba(0, 0, 0, 0.25);
+  margin: 0 auto 150px;
+}
+
+.worktype__form-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  color: #2f4583;
+  margin-bottom: 35px;
 }
 
 .worktype .slogan {
