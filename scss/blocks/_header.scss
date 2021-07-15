@@ -136,7 +136,7 @@ body.lock {
   overflow: hidden;
 }
 
-.contacts {
+.header__contacts {
   z-index: 5;
 
   & a {
@@ -147,7 +147,7 @@ body.lock {
   }
 }
 
-.phone {
+.header__phone {
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 15px;
@@ -159,7 +159,7 @@ body.lock {
   }
 }
 
-.email {
+.header__email {
   font-size: 14px;
   transition: all .3s ease 0s;
 

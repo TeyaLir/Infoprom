@@ -1,0 +1,101 @@
+.contacts__wrap {
+  position: relative;
+}
+
+.contacts__map {
+  z-index: 1;
+}
+
+.contacts__form {
+  position: absolute;
+  bottom: 65px;
+  left: 0;
+  z-index: 50;
+
+  max-width: 390px;
+  border-radius: 4px;
+  background-color: $colorMain;
+  color: #fff;
+  padding: 45px 50px 45px 55px;
+
+  &-title {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 45px;
+  }
+
+  &-tel,
+  &-mail {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    padding-left: 30px;
+    margin-bottom: 40px;
+  }
+
+  &-address {
+    font-size: 16px;
+    padding-left: 30px;
+    margin-bottom: 15px;
+  }
+
+  &-tel,
+  &-mail,
+  &-address {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+
+  &-tel {
+    &::before {
+      background-image: url('./../img/icons/contacts-phone.png');
+    }
+  }
+
+  &-mail {
+    &::before {
+      background-image: url('./../img/icons/contacts-email.png');
+    }
+  }
+
+  &-address {
+    &::before {
+      background-image: url('./../img/icons/contacts-address.png');
+    }
+  }
+
+  &-work {
+    padding-left: 30px;
+    margin-bottom: 39px;
+  }
+
+  &-btn {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 60px;
+    color: #fff;
+    transition: all .3s linear;
+    padding: 0 60px;
+
+    &:hover,
+    &:focus {
+      background-color: #fff;
+      color: $colorMain;
+    }
+  }
+}
