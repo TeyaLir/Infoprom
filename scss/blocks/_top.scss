@@ -6,16 +6,21 @@
 
 .top__img {
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
+
   & img {
     width: 100%;
+  }
+
+  @media (max-width: 540px) {
+    display: none;
   }
 }
 
 .top__inner {
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   color: #fff;
   text-align: left;
@@ -27,12 +32,37 @@
   font-size: 50px;
   line-height: 1.2;
   margin-bottom: 45px;
+
+  @media (max-width: 1170px) {
+    font-size: 44px;
+  }
+
+  @media (max-width: 970px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 750px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 540px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 440px) {
+    font-size: 26px;
+  }
 }
 
 .top {
   &__items {
     display: flex;
     margin-bottom: 190px;
+
+    @media (max-width: 540px) {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
   }
 
   &__item1,
@@ -43,6 +73,15 @@
     font-size: 16px;
     line-height: 1.25;
     padding-left: 50px;
+
+    @media (max-width: 1170px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 540px) {
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
   }
 
   &__item1::before,
@@ -52,26 +91,42 @@
     top: 0;
     left: 0;
     width: 30px;
-    height: 30px;    
+    height: 30px;
   }
+
   &__item1::before {
     background-image: url('./../img/icons/zoom.png');
   }
+
   &__item2::before {
     background-image: url('./../img/icons/check.png');
   }
 }
 
 .top__menu {
+  width: 850px;
+
+  @media (max-width: 900px) {
+    width: 700px;
+  }
+
+  @media (max-width: 740px) {
+    width: 600px;
+  }
+
+  @media (max-width: 650px) {
+    display: none;
+  }
+
   & ul {
     display: flex;
+    justify-content: space-between;
   }
+
   & li {
     z-index: 10;
   }
-  & li + li {
-    margin-left: 125px;
-  }
+
   & a {
     font-weight: 500;
     font-size: 13px;
@@ -82,9 +137,14 @@
     padding-bottom: 8px;
     border-bottom: 2px solid #fff;
     transition: all .3s ease 0s;
+
     &:hover,
     &:focus {
-      opacity: 0.5;      
+      opacity: 0.5;
+    }
+
+    @media (max-width: 750px) {
+      font-size: 12px;
     }
   }
 }
