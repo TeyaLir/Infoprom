@@ -1,5 +1,17 @@
 .projects {
   padding: 158px 0 165px;
+
+  @media (max-width: 1170px) {
+    padding-bottom: 130px;
+  }
+
+  @media (max-width: 970px) {
+    padding: 120px 0;
+  }
+
+  @media (max-width: 750px) {
+    padding-top: 90px 0 100px;
+  }
 }
 
 .projects {
@@ -7,6 +19,14 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 159px;
+
+    @media (max-width: 1170px) {
+      margin-top: 110px;
+    }
+
+    @media (max-width: 750px) {
+      margin-top: 90px;
+    }
   }
 
   &__item {
@@ -15,6 +35,10 @@
     align-items: center;
     width: 20%;
     margin-bottom: 77px;
+
+    @media (max-width: 750px) {
+      width: 48%;
+    }
 
     & img {
       display: block;

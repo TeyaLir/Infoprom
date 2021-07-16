@@ -3,6 +3,13 @@
 // Regular 400
 // Medium 500
 
+// @media (max-width: 1170px) {}
+// @media (max-width: 970px) {}
+// @media (max-width: 750px) {}
+// @media (max-width: 540px) {}
+// @media (max-width: 480px) {}
+// @media (max-width: 440px) {}
+
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -33,6 +40,15 @@ body {
   border-bottom: 2px solid $colorMain;
   padding: 26px 0;
   margin: 0 auto;
+
+  @media (max-width: 1170px) {
+    font-size: 18px;
+    width: 420px;
+  }
+
+  @media (max-width: 480px) {
+    width: 300px;
+  }
 }
 
 .btn {
@@ -44,10 +60,15 @@ body {
   line-height: 60px;
   color: #fff;
   transition: all .3s ease 0s;
+
   &:hover,
   &:focus {
     background-color: #3963da;
     border-color: #3963da;
+  }
+
+  @media (max-width: 440px) {
+    font-size: 14px;
   }
 }
 

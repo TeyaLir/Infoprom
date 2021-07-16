@@ -12,6 +12,11 @@
   z-index: 50;
   padding-top: 20px;
 
+  @media (max-width: 580px) {
+    height: 70px;
+    padding-top: 10px;
+  }
+
   &::before {
     content: '';
     position: absolute;
