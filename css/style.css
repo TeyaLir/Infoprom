@@ -1323,13 +1323,24 @@ body.lock {
 }
 
 .guarantee__item {
-  max-width: 420px;
   background-color: #fff;
-  width: 33.33333%;
+  width: 32%;
   -webkit-border-radius: 4px;
           border-radius: 4px;
   padding: 40px 27px 30px;
   margin-bottom: 50px;
+}
+
+@media (max-width: 950px) {
+  .guarantee__item {
+    width: 48%;
+  }
+}
+
+@media (max-width: 660px) {
+  .guarantee__item {
+    width: 100%;
+  }
 }
 
 .guarantee__item-num {
@@ -1337,6 +1348,18 @@ body.lock {
   font-size: 40px;
   color: #2f4583;
   margin-bottom: 18px;
+}
+
+@media (max-width: 1260px) {
+  .guarantee__item-num {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 440px) {
+  .guarantee__item-num {
+    font-size: 34px;
+  }
 }
 
 .guarantee__item-title {
@@ -1348,6 +1371,12 @@ body.lock {
 
 .guarantee__item p {
   line-height: 1.7;
+}
+
+@media (max-width: 1260px) {
+  .guarantee__item p {
+    line-height: 1.2;
+  }
 }
 
 .guarantee__item p + p {
