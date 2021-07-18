@@ -2,26 +2,84 @@
   background-color: $colorBg;
   color: $colorMain;
   padding: 92px 0 90px;
+
+  @media (max-width: 750px) {
+    padding: 70px 0 0;
+  }
 }
 
 .numbers__inner {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 750px) {
+    flex-wrap: wrap;
+
+    & .numbers__box-order1 {
+      order: 1;
+    }
+
+    & .numbers__box-order3 {
+      order: 2;
+    }
+
+    & .numbers__box-order2 {
+      order: 3;
+    }
+
+    & .numbers__box-order4 {
+      order: 4;
+    }
+  }
 }
 
 .numbers__box {
   max-width: 280px;
+
+  @media (max-width: 750px) {
+    width: 48%;
+    margin-bottom: 70px;
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: 50px;
+  }
 
   &-num {
     font-weight: 500;
     font-size: 60px;
     text-align: center;
     margin-bottom: 24px;
+
+    @media (max-width: 970px) {
+      font-size: 56px;
+    }
+
+    @media (max-width: 950px) {
+      font-size: 40px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 35px;
+      margin-bottom: 18px;
+    }
   }
 
   &-text {
     font-weight: 300;
     font-size: 18px;
     text-align: center;
+
+    @media (max-width: 1170px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 970px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 12px;
+    }
   }
 }
