@@ -1397,6 +1397,12 @@ body.lock {
   padding: 147px 0 187px;
 }
 
+@media (max-width: 1170px) {
+  .feadback {
+    padding: 80px 0;
+  }
+}
+
 .feadback__inner {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1408,21 +1414,79 @@ body.lock {
           justify-content: space-between;
 }
 
+@media (max-width: 890px) {
+  .feadback__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .feadback__text {
   max-width: 640px;
   color: #fff;
   font-weight: 300;
 }
 
+@media (max-width: 1050px) {
+  .feadback__text {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 890px) {
+  .feadback__text {
+    max-width: 540px;
+    text-align: center;
+  }
+}
+
 .feadback__text-title {
+  font-weight: 300;
   font-size: 36px;
   line-height: 1.2;
   margin-bottom: 52px;
 }
 
+@media (max-width: 1170px) {
+  .feadback__text-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 590px) {
+  .feadback__text-title {
+    font-size: 24px;
+  }
+}
+
 .feadback__text-contacts {
   font-size: 20px;
   line-height: 1.8;
+}
+
+@media (max-width: 1170px) {
+  .feadback__text-contacts {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 890px) {
+  .feadback__text-contacts {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 590px) {
+  .feadback__text-contacts {
+    font-size: 16px;
+  }
 }
 
 .feadback__text-contacts a {
@@ -1431,6 +1495,30 @@ body.lock {
   font-size: 20px;
   line-height: 1.8;
   color: #fff;
+}
+
+@media (max-width: 1170px) {
+  .feadback__text-contacts a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 890px) {
+  .feadback__text-contacts a {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 590px) {
+  .feadback__text-contacts a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 890px) {
+  .feadback__phone {
+    margin-right: 15px;
+  }
 }
 
 .feadback__phone, .feadback__email {
@@ -1456,6 +1544,12 @@ body.lock {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 1170px) {
+  .feadback__phone::before {
+    top: 7px;
+  }
+}
+
 .feadback__email::before {
   content: "";
   position: absolute;
@@ -1465,6 +1559,12 @@ body.lock {
   height: 16px;
   background-image: url("./../img/icons/email.png");
   background-repeat: no-repeat;
+}
+
+@media (max-width: 1170px) {
+  .feadback__email::before {
+    top: 8px;
+  }
 }
 
 .feadback__form {
