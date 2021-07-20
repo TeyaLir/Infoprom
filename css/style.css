@@ -1731,8 +1731,20 @@ body.lock {
   background-color: #f7f7f7;
 }
 
+@media (max-width: 1170px) {
+  .completed {
+    padding: 75px 0 80px;
+  }
+}
+
 .completed__title {
   margin-bottom: 70px;
+}
+
+@media (max-width: 1170px) {
+  .completed__title {
+    margin-bottom: 40px;
+  }
 }
 
 .completed__slider {
@@ -1854,6 +1866,49 @@ body.lock {
           align-items: stretch;
 }
 
+@media (max-width: 1450px) {
+  .completed__slider .completed__item {
+    -ms-grid-rows: 560px 175px;
+        grid-template-rows: 560px 175px;
+    grid-gap: 15px;
+  }
+}
+
+@media (max-width: 990px) {
+  .completed__slider .completed__item {
+    -ms-grid-rows: 370px 370px 175px;
+        grid-template-rows: 370px 370px 175px;
+  }
+}
+
+@media (max-width: 740px) {
+  .completed__slider .completed__item {
+    -ms-grid-rows: 400px 330px 175px;
+        grid-template-rows: 400px 330px 175px;
+  }
+}
+
+@media (max-width: 690px) {
+  .completed__slider .completed__item {
+    -ms-grid-rows: 390px 300px;
+        grid-template-rows: 390px 300px;
+  }
+}
+
+@media (max-width: 560px) {
+  .completed__slider .completed__item {
+    -ms-grid-rows: 400px 300px;
+        grid-template-rows: 400px 300px;
+  }
+}
+
+@media (max-width: 370px) {
+  .completed__slider .completed__item {
+    -ms-grid-rows: 470px 300px;
+        grid-template-rows: 470px 300px;
+  }
+}
+
 .completed__slider .completed__item div {
   overflow: hidden;
 }
@@ -1865,10 +1920,39 @@ body.lock {
   height: 563px;
 }
 
+@media (max-width: 1450px) {
+  .completed__slider .completed__item div:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+}
+
+@media (max-width: 990px) {
+  .completed__slider .completed__item div:nth-child(1) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+    height: 100%;
+    width: 100%;
+  }
+}
+
 .completed__slider .completed__item .item__single > div {
   display: block;
   max-width: 750px;
   max-height: 565px;
+}
+
+@media (max-width: 990px) {
+  .completed__slider .completed__item .item__single > div {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
 }
 
 .completed__slider .completed__item .item__single > div img {
@@ -1884,11 +1968,50 @@ body.lock {
   padding: 35px 40px;
 }
 
+@media (max-width: 1450px) {
+  .completed__slider .completed__item .item__desc {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    height: 563px;
+  }
+}
+
+@media (max-width: 990px) {
+  .completed__slider .completed__item .item__desc {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+    height: auto;
+  }
+}
+
+@media (max-width: 445px) {
+  .completed__slider .completed__item .item__desc {
+    padding: 20px 25px;
+  }
+}
+
 .completed__slider .completed__item .item__desc-title {
   font-weight: 500;
   font-size: 20px;
   color: #2f4583;
   margin-bottom: 10px;
+}
+
+@media (max-width: 740px) {
+  .completed__slider .completed__item .item__desc-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 530px) {
+  .completed__slider .completed__item .item__desc-title {
+    font-size: 16px;
+  }
 }
 
 .completed__slider .completed__item .item__desc-subtitle {
@@ -1897,6 +2020,12 @@ body.lock {
   line-height: 1.2;
   color: #787878;
   margin-bottom: 30px;
+}
+
+@media (max-width: 530px) {
+  .completed__slider .completed__item .item__desc-subtitle {
+    margin-bottom: 20px;
+  }
 }
 
 .completed__slider .completed__item .item__desc-text {
@@ -1909,6 +2038,12 @@ body.lock {
   display: flex;
 }
 
+@media (max-width: 530px) {
+  .completed__slider .completed__item .item__desc-text {
+    margin-bottom: 20px;
+  }
+}
+
 .completed__slider .completed__item .item__desc-text span {
   font-size: 12px;
   color: #2f4583;
@@ -1918,6 +2053,12 @@ body.lock {
 .completed__slider .completed__item .item__desc-task, .completed__slider .completed__item .item__desc-period, .completed__slider .completed__item .item__desc-tep {
   position: relative;
   padding-left: 25px;
+}
+
+@media (max-width: 530px) {
+  .completed__slider .completed__item .item__desc-task, .completed__slider .completed__item .item__desc-period, .completed__slider .completed__item .item__desc-tep {
+    padding-left: 0;
+  }
 }
 
 .completed__slider .completed__item .item__desc-task::before, .completed__slider .completed__item .item__desc-period::before, .completed__slider .completed__item .item__desc-tep::before {
@@ -1933,6 +2074,12 @@ body.lock {
   background-position: center;
 }
 
+@media (max-width: 530px) {
+  .completed__slider .completed__item .item__desc-task::before, .completed__slider .completed__item .item__desc-period::before, .completed__slider .completed__item .item__desc-tep::before {
+    display: none;
+  }
+}
+
 .completed__slider .completed__item .item__desc-task::before {
   background-image: url("./../img/icons/task.png");
 }
@@ -1945,15 +2092,48 @@ body.lock {
   margin-bottom: 5px;
 }
 
+@media (max-width: 530px) {
+  .completed__slider .completed__item .item__desc-tep div > p {
+    margin-bottom: 0;
+  }
+}
+
 .completed__slider .completed__item .item__desc-tep::before {
   background-image: url("./../img/icons/tep.png");
+}
+
+@media (max-width: 1450px) {
+  .completed__slider .completed__item .item__nav {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+  }
+}
+
+@media (max-width: 990px) {
+  .completed__slider .completed__item .item__nav {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
+  }
+}
+
+@media (max-width: 690px) {
+  .completed__slider .completed__item .item__nav {
+    display: none;
+  }
 }
 
 .completed__slider .completed__item .item__nav > div * {
   position: relative;
   display: block;
   margin: 0 10px;
-  width: 230px;
+}
+
+@media (max-width: 1550px) {
+  .completed__slider .completed__item .item__nav > div * {
+    margin: 0 5px;
+  }
 }
 
 .completed__slider .completed__item .item__nav > div * img {

@@ -62,6 +62,14 @@ $(function () {
       var thumb = $(slider.$slides[i]).data();
       return '<span>' + (i + 1) + '</span>';
     },
+    responsive: [
+      {
+        breakpoint: 690,
+        settings: {
+          dots: false,
+        }
+      }
+    ]
   });
   $('.item__single').slick({
     slidesToShow: 1,
