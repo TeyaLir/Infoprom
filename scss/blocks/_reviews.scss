@@ -6,6 +6,14 @@
 .reviews__title {
   color: #fff;
   margin-bottom: 70px;
+
+  @media (max-width: 970px) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: 40px;
+  }
 }
 
 .reviews__item {
@@ -24,6 +32,15 @@
     width: 195px;
     height: 270px;
     margin: 0 auto 50px;
+
+    @media (max-width: 970px) {
+      width: 135px;
+      height: 180px;
+    }
+
+    @media (max-width: 480px) {
+      margin-bottom: 40px;
+    }
   }
 
   &-desc {
@@ -37,11 +54,27 @@
     line-height: 1.6;
     font-size: 15px;
     margin-bottom: 24px;
+
+    @media (max-width: 1170px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 540px) {
+      font-size: 13px;
+    }
   }
 
   &-author {
     color: #8999c7;
     margin-bottom: 5px;
+
+    @media (max-width: 1170px) {
+      font-size: 13px;
+    }
+
+    @media (max-width: 540px) {
+      font-size: 12px;
+    }
   }
 
   &-position {
