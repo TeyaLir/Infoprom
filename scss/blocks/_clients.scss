@@ -1,9 +1,21 @@
 .clients {
   padding: 116px 0 138px;
+
+  @media (max-width: 1000px) {
+    padding: 90px 0 100px;
+  }
+
+  @media (max-width: 750px) {
+    padding: 70px 0 100px;
+  }
 }
 
 .clients-title {
   margin-bottom: 83px;
+
+  @media (max-width: 1170px) {
+    margin-bottom: 70px;
+  }
 }
 
 .clients__item {
