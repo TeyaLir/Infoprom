@@ -4,6 +4,16 @@
 
 .contacts__map {
   z-index: 1;
+
+  @media (max-width: 560px) {
+    display: none;
+  }
+}
+
+.contacts .container-fluid {
+  @media (max-width: 560px) {
+    background-color: $colorMain;
+  }
 }
 
 .contacts__form {
@@ -18,10 +28,24 @@
   color: #fff;
   padding: 45px 50px 45px 55px;
 
+  @media (max-width: 560px) {
+    position: unset;
+    max-width: none;
+  }
+
+  @media (max-width: 420px) {
+    padding: 45px 30px;
+  }
+
   &-title {
     font-weight: 500;
     font-size: 20px;
     margin-bottom: 45px;
+
+    @media (max-width: 370px) {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
   }
 
   &-tel,
@@ -31,12 +55,21 @@
     color: #fff;
     padding-left: 30px;
     margin-bottom: 40px;
+
+    @media (max-width: 370px) {
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
   }
 
   &-address {
     font-size: 16px;
     padding-left: 30px;
     margin-bottom: 15px;
+
+    @media (max-width: 370px) {
+      font-size: 14px;
+    }
   }
 
   &-tel,
@@ -78,6 +111,10 @@
   &-work {
     padding-left: 30px;
     margin-bottom: 39px;
+
+    @media (max-width: 370px) {
+      font-size: 12px;
+    }
   }
 
   &-btn {
@@ -91,6 +128,10 @@
     color: #fff;
     transition: all .3s linear;
     padding: 0 60px;
+
+    @media (max-width: 370px) {
+      font-size: 14px;
+    }
 
     &:hover,
     &:focus {
