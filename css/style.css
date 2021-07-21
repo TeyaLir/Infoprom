@@ -966,6 +966,12 @@ body.lock {
   }
 }
 
+@media (max-width: 350px) {
+  .description__right-title {
+    margin-bottom: 32px;
+  }
+}
+
 .description__right-list li {
   font-size: 16px;
   display: -webkit-box;
@@ -2369,6 +2375,12 @@ body.lock {
 @media (max-width: 750px) {
   .clients {
     padding: 70px 0 100px;
+  }
+}
+
+@media (max-width: 580px) {
+  .clients {
+    padding: 70px 0 80px;
   }
 }
 

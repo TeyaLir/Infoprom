@@ -210,6 +210,9 @@
     @media (max-width: 1170px) {
       font-size: 24px;
     }
+    @media (max-width: 350px) {
+      margin-bottom: 32px;
+    }
   }
 
   &-list li {
