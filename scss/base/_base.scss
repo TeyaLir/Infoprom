@@ -3,13 +3,6 @@
 // Regular 400
 // Medium 500
 
-// @media (max-width: 1170px) {}
-// @media (max-width: 970px) {}
-// @media (max-width: 750px) {}
-// @media (max-width: 540px) {}
-// @media (max-width: 480px) {}
-// @media (max-width: 440px) {}
-
 html {
   scroll-behavior: smooth;
 }
@@ -24,12 +17,20 @@ body {
   max-width: 1560px;
   padding: 0 15px;
   margin: 0 auto;
+  overflow: hidden;
+}
+
+.container-visible {
+  max-width: 1560px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .container-fluid {
   max-width: 1360px;
   padding: 0 15px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .slogan {
@@ -80,6 +81,7 @@ body {
   font-size: 28px;
   color: $colorMain;
   text-align: center;
+
   @media (max-width: 1170px) {
     font-size: 24px;
   }

@@ -5,15 +5,15 @@ $(function () {
 
   // Бургер меню
   function toggleMenu() {
-    $('.menu__burger, .menu').toggleClass('active');
+    $('.menu__btn, .menu').toggleClass('active');
     $('body').toggleClass('lock');
   }
-  $(document).ready(function () {
+  $(document).ready(function() {
     $('.menu__btn').click(function (event) {
       $('.menu__btn, .menu').toggleClass('active');
       $('body').toggleClass('lock');
     });
-    $('.menu__list-link').each(function (i) {
+    $('.menu__list li').each(function (i) {
       this.onclick = toggleMenu;
     });
   });
@@ -176,7 +176,3 @@ $(document).ready(function () {
       }
   });
 });
-
-
-
-

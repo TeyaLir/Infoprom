@@ -1,5 +1,14 @@
+.contacts{
+  @media (max-width: 560px) {
+    background-color: $colorMain;
+  }
+}
+
 .contacts__wrap {
   position: relative;
+  max-width: 1360px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .contacts__map {
@@ -7,12 +16,6 @@
 
   @media (max-width: 560px) {
     display: none;
-  }
-}
-
-.contacts .container-fluid {
-  @media (max-width: 560px) {
-    background-color: $colorMain;
   }
 }
 
